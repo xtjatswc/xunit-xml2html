@@ -3,7 +3,12 @@
 Xunit test logger can generate xml reports in the xunit v2 format (https://xunit.net/docs/format-xml-v2).
 MS Test Framework support TRX format result(.trx), For generate xml file result, you can add a reference to the Xunit Logger nuget package in test project
 Use the following command line in tests
-> dotnet test --logger:xunit
+
+Package: XunitXml.TestLogger  [3.0.70]
+
+```
+dotnet test --logger:xunit
+```
 Test results are generated in the TestResults directory relative to the test.csproj
 But not html report!
 
