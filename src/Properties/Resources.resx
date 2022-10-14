@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HTML" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;xsl:output method="html"/&gt;
+  &lt;xsl:key name="tests-by-class" match="collection/test" use="@type" /&gt;
+  &lt;xsl:template match="/"&gt;
+    &lt;xsl:text disable-output-escaping="yes"&gt;&lt;![CDATA[&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;]]&gt;&lt;/xsl:text&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;xUnit.net Test Results&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+          body { font-family: Calibri, Verdana, Arial, sans-serif; background-color: White; color: Black; }
+          h2,h3,h4,h5 { margin: 0; padding: 0; }
+          h3 { font-weight: normal; }
+          h4 { margin: 0.5em 0; }
+          h5 { font-weight: normal; font-style: italic; margin-bottom: 0.75em; }
+          h6 { font-size: 0.9em; font-weight: bold; margin: 0.5em 0 0 0.75em; padding: 0; }
+          pre,table { font-family: Consolas; font-size: 0.8em; margin: 0 0 0 1em; padding: 0; }
+          table { padding-bottom: 0.25em; }
+          th { padding: 0 0.5em; border-right: 1px solid #bbb; text-align: left; }
+          td { padding-left: 0.5em; }
+          .divided { border-top: solid 1px #f0f5fa; padding-top: 0.5em; }
+          .row, .altrow { padding: 0.1em 0.3em; }
+          .row { background-color: #f0f5fa; }
+          .altrow { background-color: #e1ebf4; }
+          .success, .failure, .skipped { font-family: Arial Unicode MS; font-weight: normal; float: left; width: 1em; display: block; }
+          .success { color: #0c0; }
+          .failure { color: #c00; }
+          .skipped { color: #cc0; }
+          .timing { float: right; }
+          .indent { margin: 0.25em 0 0.5em 2em; }
+          .clickable { cursor: pointer; }
+          .testcount { font-size: 85%; }
+        &lt;/style&gt;
+        &lt;script language="javascript"&gt;
+          function ToggleClass(id) {
+            var elem = document.getElementById(id);
+            if (elem.style.display == "none") {
+              elem.style.display = "block";
+            }
+            else {
+              elem.style.display = "none";
+            }
+          }
+        &lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h3 class="divided"&gt;
+          &lt;b&gt;Assemblies Run&lt;/b&gt;
+        &lt;/h3&gt;
+        &lt;xsl:apply-templates select="//assembly"/&gt;
+        &lt;h3 class="divided"&gt;
+          &lt;b&gt;Summary&lt;/b&gt;
+        &lt;/h3&gt;
+        &lt;div&gt;
+          Tests run: &lt;a href="#all"&gt;&lt;b&gt;&lt;xsl:value-of select="sum(//assembly/@total)"/&gt;&lt;/b&gt;&lt;/a&gt; &amp;#x2014;
+          &lt;xsl:if test="sum(//assembly/@errors) &gt; 0"&gt;
+            Errors: &lt;a href="#errors"&gt;&lt;b&gt;&lt;xsl:value-of select="sum(//assembly/@errors)"/&gt;&lt;/b&gt;&lt;/a&gt;,
+          &lt;/xsl:if&gt;
+          &lt;xsl:if test="sum(//assembly/@failed) &gt; 0"&gt;
+            Failures: &lt;a href="#failures"&gt;&lt;b&gt;&lt;xsl:value-of select="sum(//assembly/@failed)"/&gt;&lt;/b&gt;&lt;/a&gt;,
+          &lt;/xsl:if&gt;
+          &lt;xsl:if test="sum(//assembly/@skipped) &gt; 0"&gt;
+            Skipped: &lt;a href="#skipped"&gt;&lt;b&gt;&lt;xsl:value-of select="sum(//assembly/@skipped)"/&gt;&lt;/b&gt;&lt;/a&gt;,
+          &lt;/xsl:if&gt;
+          Run time: &lt;b&gt;&lt;xsl:value-of select="format-number(sum(//assembly/@time), '0.000')"/&gt;s&lt;/b&gt;,
+          Finished: &lt;b&gt;&lt;xsl:value-of select="//assemblies/@timestamp"/&gt;&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;xsl:if test="//assembly/errors/error"&gt;
+          &lt;br /&gt;
+          &lt;h2&gt;
+            &lt;a id="errors"&gt;&lt;/a&gt;Errors
+          &lt;/h2&gt;
+          &lt;xsl:apply-templates select="//assembly/errors"/&gt;
+        &lt;/xsl:if&gt;
+        &lt;xsl:if test="//assembly/collection/test[@result='Fail']"&gt;
+          &lt;br /&gt;
+          &lt;h2&gt;
+            &lt;a id="failures"&gt;&lt;/a&gt;Failed tests
+          &lt;/h2&gt;
+          &lt;xsl:apply-templates select="//assembly/collection/test[@result='Fail']"&gt;
+            &lt;xsl:sort select="@name"/&gt;
+          &lt;/xsl:apply-templates&gt;
+        &lt;/xsl:if&gt;
+        &lt;xsl:if test="//assembly/collection/failures/failure"&gt;
+          &lt;br /&gt;
+          &lt;h2&gt;
+            &lt;a id="failures"&gt;&lt;/a&gt;Collection failures
+          &lt;/h2&gt;
+          &lt;xsl:apply-templates select="//assembly/collection/failures"&gt;
+            &lt;xsl:sort select="../@name"/&gt;
+          &lt;/xsl:apply-templates&gt;
+        &lt;/xsl:if&gt;
+        &lt;xsl:if test="//assembly/@skipped &gt; 0"&gt;
+          &lt;br /&gt;
+          &lt;h2&gt;
+            &lt;a id="skipped"&gt;&lt;/a&gt;Skipped tests
+          &lt;/h2&gt;
+          &lt;xsl:apply-templates select="//assembly/collection/test[@result='Skip']"&gt;
+            &lt;xsl:sort select="@name"/&gt;
+          &lt;/xsl:apply-templates&gt;
+        &lt;/xsl:if&gt;
+        &lt;br /&gt;
+        &lt;h2&gt;
+          &lt;a id="all"&gt;&lt;/a&gt;All tests
+        &lt;/h2&gt;
+        &lt;h5&gt;Click test class name to expand/collapse test details&lt;/h5&gt;
+
+        &lt;xsl:for-each select="//assembly/collection/test[count(. | key('tests-by-class', @type)[1]) = 1]"&gt;
+          &lt;xsl:sort select="@type" /&gt;
+          &lt;h3&gt;
+            &lt;span class="timing"&gt;
+              &lt;xsl:value-of select="format-number(sum(key('tests-by-class', @type)/@time), '0.000')"/&gt;s
+            &lt;/span&gt;
+            &lt;span class="clickable"&gt;
+              &lt;xsl:attribute name="onclick"&gt;ToggleClass('class&lt;xsl:value-of select="generate-id()"/&gt;')&lt;/xsl:attribute&gt;
+              &lt;xsl:attribute name="ondblclick"&gt;ToggleClass('class&lt;xsl:value-of select="generate-id()"/&gt;')&lt;/xsl:attribute&gt;
+              &lt;xsl:if test="count(key('tests-by-class', @type)[@result='Fail']) &gt; 0"&gt;
+                &lt;span class="failure"&gt;&amp;#x2718;&lt;/span&gt;
+              &lt;/xsl:if&gt;
+              &lt;xsl:if test="(count(key('tests-by-class', @type)[@result='Fail']) = 0) and (count(key('tests-by-class', @type)[@result='Skip']) &gt; 0)"&gt;
+                &lt;span class="skipped"&gt;&amp;#x2762;&lt;/span&gt;
+              &lt;/xsl:if&gt;
+              &lt;xsl:if test="(count(key('tests-by-class', @type)[@result='Fail']) = 0) and (count(key('tests-by-class', @type)[@result='Skip']) = 0)"&gt;
+                &lt;span class="success"&gt;&amp;#x2714;&lt;/span&gt;
+              &lt;/xsl:if&gt;
+              &amp;#160;&lt;xsl:value-of select="@type"/&gt;
+              &amp;#160;&lt;span class="testcount"&gt;
+                (&lt;xsl:value-of select="count(key('tests-by-class', @type))"/&gt;&amp;#160;test&lt;xsl:if test="count(key('tests-by-class', @type)) &gt; 1"&gt;s&lt;/xsl:if&gt;)
+              &lt;/span&gt;
+            &lt;/span&gt;
+            &lt;br clear="all" /&gt;
+          &lt;/h3&gt;
+          &lt;div class="indent"&gt;
+            &lt;xsl:if test="count(key('tests-by-class', @type)[@result='Fail']) = 0"&gt;
+              &lt;xsl:attribute name="style"&gt;display: none;&lt;/xsl:attribute&gt;
+            &lt;/xsl:if&gt;
+            &lt;xsl:attribute name="id"&gt;class&lt;xsl:value-of select="generate-id()"/&gt;&lt;/xsl:attribute&gt;
+            &lt;xsl:apply-templates select="key('tests-by-class', @type)"&gt;
+              &lt;xsl:sort select="@name"/&gt;
+            &lt;/xsl:apply-templates&gt;
+          &lt;/div&gt;
+        &lt;/xsl:for-each&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="assembly"&gt;
+    &lt;div&gt;
+      &lt;xsl:value-of select="@name"/&gt;
+    &lt;/div&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="test"&gt;
+    &lt;div&gt;
+      &lt;xsl:attribute name="class"&gt;&lt;xsl:if test="(position() mod 2 = 0)"&gt;alt&lt;/xsl:if&gt;row&lt;/xsl:attribute&gt;
+      &lt;xsl:if test="@result!='Skip'"&gt;
+        &lt;span class="timing"&gt;
+          &lt;xsl:value-of select="@time"/&gt;s
+        &lt;/span&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="@result='Skip'"&gt;
+        &lt;span class="timing"&gt;Skipped&lt;/span&gt;
+        &lt;span class="skipped"&gt;&amp;#x2762;&lt;/span&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="@result='Fail'"&gt;
+        &lt;span class="failure"&gt;&amp;#x2718;&lt;/span&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="@result='Pass'"&gt;
+        &lt;span class="success"&gt;&amp;#x2714;&lt;/span&gt;
+      &lt;/xsl:if&gt;
+      &amp;#160;&lt;xsl:value-of select="@name"/&gt;
+      &lt;br clear="all" /&gt;
+      &lt;xsl:if test="reason"&gt;
+        &lt;pre&gt;&lt;xsl:value-of select="reason"/&gt;&lt;/pre&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="child::node()/message"&gt;
+        &lt;pre&gt;&lt;xsl:value-of select="child::node()/message"/&gt;&lt;/pre&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="failure/stack-trace"&gt;
+        &lt;pre&gt;&lt;xsl:value-of select="failure/stack-trace"/&gt;&lt;/pre&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="output"&gt;
+        &lt;h6&gt;Output:&lt;/h6&gt;
+        &lt;pre&gt;&lt;xsl:value-of select="output"/&gt;&lt;/pre&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:if test="traits"&gt;
+        &lt;h6&gt;Traits:&lt;/h6&gt;
+        &lt;table cellspacing="0" cellpadding="0"&gt;
+          &lt;xsl:apply-templates select="traits/trait"/&gt;
+        &lt;/table&gt;
+      &lt;/xsl:if&gt;
+    &lt;/div&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="trait"&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;xsl:value-of select="@name"/&gt;&lt;/th&gt;
+      &lt;td&gt;&lt;xsl:value-of select="@value"/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="failures"&gt;
+    &lt;h4&gt;&lt;xsl:value-of select="../@name"/&gt;&lt;/h4&gt;
+    &lt;xsl:for-each select="failure"&gt;
+      &lt;div&gt;
+        &lt;xsl:attribute name="class"&gt;&lt;xsl:if test="(position() mod 2 = 0)"&gt;alt&lt;/xsl:if&gt;row&lt;/xsl:attribute&gt;
+        &lt;span class="failure"&gt;&amp;#x2718;&lt;/span&gt;&lt;br clear="all"/&gt;
+        &lt;xsl:if test="child::node()/message"&gt;
+          &lt;pre&gt;&lt;xsl:value-of select="child::node()/message"/&gt;&lt;/pre&gt;
+        &lt;/xsl:if&gt;
+        &lt;xsl:if test="stack-trace"&gt;
+          &lt;pre&gt;&lt;xsl:value-of select="stack-trace"/&gt;&lt;/pre&gt;
+        &lt;/xsl:if&gt;
+      &lt;/div&gt;
+    &lt;/xsl:for-each&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="errors"&gt;
+    &lt;xsl:for-each select="error"&gt;
+      &lt;div&gt;
+        &lt;xsl:attribute name="class"&gt;
+          &lt;xsl:if test="(position() mod 2 = 0)"&gt;alt&lt;/xsl:if&gt;row
+        &lt;/xsl:attribute&gt;
+        &lt;span class="failure"&gt;&amp;#x2718;&lt;/span&gt;
+        &lt;xsl:if test="@type='assembly-cleanup'"&gt;Test Assembly Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='test-collection-cleanup'"&gt;Test Collection Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='test-class-cleanup'"&gt;Test Class Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='test-method-cleanup'"&gt;Test Method Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='test-case-cleanup'"&gt;Test Case Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='test-cleanup'"&gt;Test Cleanup&lt;/xsl:if&gt;
+        &lt;xsl:if test="@type='fatal'"&gt;Fatal Error&lt;/xsl:if&gt;
+        &lt;xsl:if test="@name"&gt;
+          (&lt;xsl:value-of select="@name"/&gt;)
+        &lt;/xsl:if&gt;
+        &lt;br clear="all"/&gt;
+        &lt;xsl:if test="child::node()/message"&gt;
+          &lt;pre&gt;&lt;xsl:value-of select="child::node()/message"/&gt;&lt;/pre&gt;
+        &lt;/xsl:if&gt;
+        &lt;xsl:if test="stack-trace"&gt;
+          &lt;pre&gt;&lt;xsl:value-of select="stack-trace"/&gt;&lt;/pre&gt;
+        &lt;/xsl:if&gt;
+      &lt;/div&gt;
+    &lt;/xsl:for-each&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+</root>
